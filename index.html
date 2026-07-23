@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đang chuyển hướng...</title>
+</head>
+<body>
+    <p>Đang chuyển hướng...</p>
+
+    <script>
+        const link1 = "https://s.shopee.vn/2BDVrvi40d";
+        const link2 = "https://voh.com.vn/tieu-su-sao/tieu-su-pham-soai-ky-659951.html";
+
+        let count = localStorage.getItem("clickCount_repo4") || 0;
+
+        if (count == 0) {
+            localStorage.setItem("clickCount_repo4", 1);
+            window.location.href = link1;
+        } else {
+            window.location.href = link2;
+        }
+    </script>
+</body>
+</html>
